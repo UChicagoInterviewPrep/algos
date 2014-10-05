@@ -1,3 +1,8 @@
+/* AUTHOR: Jonathan Jin
+ *
+ * TASK: Reverse a linked list in linear time, with constrained memory, no second container allowed. 
+ */
+
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -38,6 +43,7 @@ void int_llist_reverse(int_llist *list) {
 }
 
 int main() {
+  /* testing stuff, can disregard */
   int_llist *list        = malloc(sizeof(int_llist));
   list->val              = 1;
   list->next             = malloc(sizeof(int_llist));
