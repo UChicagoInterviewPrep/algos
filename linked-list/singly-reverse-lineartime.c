@@ -6,24 +6,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-struct int_llist {
+typedef struct int_llist {
   int val;
   struct int_llist *next;
-};
-
-typedef struct int_llist int_llist;
-
-void int_llist_printf(int_llist *list) {
-  int_llist *node_curr = list;
-
-  while (node_curr != NULL) {
-    printf("%d ", node_curr->val);
-    node_curr = node_curr->next;
-  }
-  putchar('\n');
-
-  return;
-}
+} int_llist;
 
 void int_llist_reverse(int_llist *list) {
   int_llist *prev = NULL;
@@ -42,8 +28,22 @@ void int_llist_reverse(int_llist *list) {
   return;
 }
 
+
+/* testing stuff, can disregard */
+
+void int_llist_printf(int_llist *list) {
+  int_llist *node_curr = list;
+
+  while (node_curr != NULL) {
+    printf("%d ", node_curr->val);
+    node_curr = node_curr->next;
+  }
+  putchar('\n');
+
+  return;
+}
+
 int main() {
-  /* testing stuff, can disregard */
   int_llist *list        = malloc(sizeof(int_llist));
   list->val              = 1;
   list->next             = malloc(sizeof(int_llist));
