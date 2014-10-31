@@ -1,0 +1,96 @@
+Buzzfeed's Perl Proficiency Test
+==================================
+
+Introduction
+------------
+
+This a relatively basic test to gauge your proficiency in Perl. You're taking
+this test because we like you! You're eager and excited. You're interested and
+interesting. Now it's time to write some code. You'll find several sections in
+this package.
+
+    1. Loops and Conditional Statements
+    2. Basic Data Structure Manipulation
+        * Sorting
+        * List Comprehensions
+        * Filtering
+        * Generators
+    3. Object Oriented Concepts
+        * Classes / Models
+        * Inheritance
+        * Encapsulation
+    4. Algorithms
+
+You may structure it any way you like, but you must import all the methods you
+define into test.t to run the tests for them.
+
+Your code should be efficient, while at the same time avoiding premature
+optimization.
+
+One last thing, and this is important... Every method you write should have a
+test!
+
+
+1. Loops And Conditional Statements
+-----------------------------------
+
+    1. Write function containing a loop that iterates over a range of values,
+    1-50. Return those values.
+
+    2. Write a function containing a loop that iterates over a range of values,
+    0-50, skipping every odd number. Return the unskipped values. Use 'next' for
+    this
+
+    3. Write a function containing loop that iterates, generating random
+    integers between 1 and 100, stopping when the returned number is 42. Return
+    the numbers generated up to this point.
+
+2. Basic Data Structure Manipulation
+------------------------------------
+
+    1. Write a function that filters the numbers returned by the method
+    implemented in 1.1 so they match 1.2
+
+    2. Write an anonymous function that returns the same output of 1.2
+
+    3. Write an anonymous function that returns a dictionary of the form `{0: 1,
+    1: 2, 2: 3, ..., 9: 10}`
+
+3. Object Oriented Concepts
+---------------------------
+
+    1. Write a class called Mammal. 
+
+        * Mammal should have a method called 'speak' that returns 'hello'.
+
+        * Mammal should have a method called 'legs' that returns 2.
+
+    2. Write a class called Cat that inherits from Mammal.
+
+        * Cat's speak method should return 'meow'. Don't define a speak
+          method. Inherit it.
+
+        * Cat's 'legs' method should return 4. Dont' define a 'legs'
+          method. Inherit it.
+
+    3. Write a class called Dog that inherits from Mammal.
+        * Dog's speak method should return 'arf'
+
+        * Define a method on Dog that overrides Mammal's legs method. It should
+          return the output of Mammal's legs method multiplied by 2.
+
+    4. Write a test that illustrates an attribute defined in a constructor/new
+    method of 'Mammal', and implement a constructor in cat or dog that also
+    executes the parent constructor.
+
+
+Implement a fast sort in Perl
+
+  1. Write a fast sorting algorithm to sort 100,000 random numbers.
+
+  2. Write a function that benchmarks the sort.
+
+  3. Optimize the sort based on benchmark results.
+
+  4. Include a function that runs each iteration of your sort function with
+  benchmarking output.
