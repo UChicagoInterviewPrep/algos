@@ -1,5 +1,5 @@
-Buzzfeed's Perl Proficiency Test
-==================================
+Perl Proficiency Test
+=====================
 
 Introduction
 ------------
