@@ -1,3 +1,5 @@
+/* FIXME: this is not actually correct */
+
 /* AUTHOR: Jonathan Jin
  *
  * TASK: Check if a binary tree is a binary search tree.
